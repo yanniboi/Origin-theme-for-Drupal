@@ -1,0 +1,112 @@
+/* Import Fonts */
+@import url(http://fonts.googleapis.com/css?family=Exo);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* Styles */
+
+html {
+  background: url(../images/bg4.png) #232323;
+
+}
+
+body {
+  width: 960px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+  font-family:  Helvetica;
+  font-family: 'Exo';
+  font-family: 'PT Sans';
+  font-family: 'Ubuntu';
+  color: #121212;
+}
+
+body a {
+  color: #121212;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: #0099db;
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+header.l-header {
+  text-align: center;
+}
+
+.site-name a {
+  color: #0099db;
+  text-transform: uppercase;
+}
+
+.site-logo img {
+  margin: 0 auto;
+  display: block;
+
+border-radius: 50px;
+padding: 10px;
+border: 5px solid #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.l-branding {
+  width: 100%;
+}
+
+.l-content article,
+.l-content > article,
+.l-content > form {
+  background: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+
+/* articles */
+
+article  > header {
+  text-align: center;
+}
+
+/* Scroll */
+
+.scrollup {
+width: 48px;
+height: 48px;
+position: fixed;
+bottom: 50px;
+right: 75px;
+cursor: pointer;
+text-indent: -9999px;
+background: rgba( 0, 0, 0, 1) url(../images/up_arrow2.png) no-repeat center center;
+}
+
+.scrollup.transition {
+transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+}
+
+/* Other */
+
+#block-system-powered-by {
+  color: #ffffff;
+}
+
+#block-system-powered-by a {
+  color: #0099db;
+}
+
+.breadcrumb {
+  display: none;
+}
