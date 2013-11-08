@@ -3,11 +3,13 @@ description = 'An Omega based blog theme.'
 core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
-base theme = 'omega'
+base theme = 'bootstrap'
 version = '1.x'
 
 ; Stylesheets
 stylesheets[all][] = css/global.css
+stylesheets[all][] = css/maintenance.css
+stylesheets[all][] = css/menu.css
 
 ; Scripts
 scripts[] = js/scrollup.js

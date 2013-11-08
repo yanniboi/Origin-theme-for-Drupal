@@ -2,6 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Exo);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url('../icomoon/style.css');
+@import url('../teaser_icons/style.css');
 
 /* Styles */
 
@@ -11,24 +13,33 @@ html {
 }
 
 body {
-  width: 960px;
+/*  width: 960px;
   max-width: 100%;
-  min-width: 768px;
+  min-width: 768px;*/ 
+  max-width: 960px;
   margin: 0 auto;
   font-family:  Helvetica;
   font-family: 'Exo';
   font-family: 'PT Sans';
   font-family: 'Ubuntu';
   color: #121212;
+  background-color: transparent;
 }
 
+body a > i,
 body a {
   color: #121212;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
 }
 
 body a:hover {
   text-decoration: underline;
+  color: #0099db;
+
 }
 
 h1, h2, h3 {
@@ -37,6 +48,18 @@ h1, h2, h3 {
   font-family: 'Josefin Slab', serif;
   font-weight: bold;
   font-size: 2em;
+}
+
+h1 a, h2 a, h3 a {
+  color: #5f6a59;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  color: #0099db;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  text-decoration: none;
 }
 
 header.l-header {
@@ -51,10 +74,9 @@ header.l-header {
 .site-logo img {
   margin: 0 auto;
   display: block;
-
-border-radius: 50px;
-padding: 10px;
-border: 5px solid #FFFFFF;
+  border-radius: 50px;
+  padding: 10px;
+  border: 5px solid #FFFFFF;
   margin-bottom: 20px;
 }
 
@@ -80,6 +102,7 @@ article  > header {
 /* Scroll */
 
 .scrollup {
+border-radius: 7px;
 width: 48px;
 height: 48px;
 position: fixed;
@@ -87,7 +110,7 @@ bottom: 50px;
 right: 75px;
 cursor: pointer;
 text-indent: -9999px;
-background: rgba( 0, 0, 0, 1) url(../images/up_arrow2.png) no-repeat center center;
+background: rgba( 0, 0, 0, 0.7) url(../images/up_arrow2.png) no-repeat center center;
 }
 
 .scrollup.transition {
@@ -107,6 +130,7 @@ transition: all 0.2s ease-in-out;
   color: #0099db;
 }
 
-.breadcrumb {
+.breadcrumb,
+.feed-icon {
   display: none;
 }
