@@ -26,6 +26,11 @@ body {
   background-color: transparent;
 }
 
+body p {
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+
 body a > i,
 body a {
   color: #121212;
@@ -97,6 +102,11 @@ header.l-header {
 
 article  > header {
   text-align: center;
+  padding: 20px 0;
+}
+
+article  > header .entry-icon {
+  padding: 15px 0;
 }
 
 /* Scroll */

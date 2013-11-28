@@ -34,6 +34,7 @@
 
 #block-system-main-menu ul > li {
 	margin: 0 30px 18px 30px;
+        font-size: 20px;
 }
 
 #block-system-main-menu ul > li > a {

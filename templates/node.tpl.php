@@ -84,19 +84,20 @@
       <?php print render($title_prefix); ?>
       <?php if (!$page): ?>
         <?php if ($teaser && !empty($field_icon)): ?>
-        <?php if ($field_static): ?>
+        <?php if (!empty($field_static[0]) && $field_static[0]['value']): ?>
           <p class="entry-icon"><i class="icon-<?php print $field_icon[0]['value']; ?>"></i></p>
         <?php else : ?>
-          <p class="entry-icon"><a href=""<?php print $node_url; ?>"><i class="icon-<?php print $field_icon[0]['value']; ?>"></i></a></p>
+          <p class="entry-icon"><a href="<?php print $node_url; ?>"><i class="icon-<?php print $field_icon[0]['value']; ?>"></i></a></p>
         <?php endif; ?>
           <?php unset($content['field_icon']); ?>
         <?php endif; ?>
-        <?php if ($field_static): ?>
+        <?php if (!empty($field_static[0]) && $field_static[0]['value']): ?>
           <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
           <?php unset($content['field_static']); ?>
           <?php unset($content['links']); ?>
         <?php else : ?>
           <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
+          <?php unset($content['field_static']); ?>
         <?php endif; ?>
       <?php endif; ?>
       <?php print render($title_suffix); ?>

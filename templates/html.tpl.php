@@ -51,6 +51,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <meta name="google-site-verification" content="g0nsQhKOV09SI-cyylctKjqAsYRbFT0uB2k2cNUkkoI" />
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
