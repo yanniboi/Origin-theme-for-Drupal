@@ -43,3 +43,7 @@ color: #0099db;
 .icon-envelop:before {
 	content: "\e602";
 }
+
+.icon-cog:before {
+       content: "\e603";
+}
